@@ -1,0 +1,16 @@
+.blue-button {
+    background: $blue;
+    border: none;
+    height: $l-size;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.blue-button--link{
+    background: none;
+    
+}
