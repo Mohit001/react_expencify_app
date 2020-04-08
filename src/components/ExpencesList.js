@@ -5,13 +5,20 @@ import selectExpences from '../selectors/expences'
 
 const ExpencesList = (props) => (
     <div>
-        <h1>Expences List</h1>
-        {props.expences.map((expence)=>{
+    {
+        props.expences.length === 0 ? (
+        <p>No expenses</p>
+      ) :
+      (
+        props.expences.map((expense) => {
             return <ExpenceListItem
-                        key={expence.id} 
-                        {...expence}
-                        />
-        })}
+                key={expense.id} 
+                {...expense}
+                />
+        })
+      )
+    
+    }
     </div>
 );
 

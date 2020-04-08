@@ -1,6 +1,8 @@
 const expencesReducersDefaultState = []
 export default (state = expencesReducersDefaultState, action) => {
     switch(action.type){
+        case 'SET_EXPENSES':
+            return action.expenses;
         case 'ADD_EXPENCE':
             return [...state, action.expence]
         case 'REMOVE_EXPENCE':
